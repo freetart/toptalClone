@@ -6,16 +6,6 @@ $info: #384357;
 $success: #01c882;
 
 // globals
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -92,6 +82,14 @@ body {
     img {
       width: 15rem;
     }
+  }
+
+  .glide__slide:hover {
+    cursor: grab;
+  }
+
+  .glide__slide:active {
+    cursor: grabbing;
   }
 }
 
