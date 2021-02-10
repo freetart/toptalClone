@@ -29,4 +29,59 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+// nav
+
+.custom-nav {
+  transition: all 0.4s ease;
+}
+
+.nav-link {
+  font-size: 1.1rem;
+  margin: 0.5rem;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// header
+.header {
+  position: relative;
+  height: 100vh;
+
+  &-content {
+    z-index: 2;
+    height: 100vh;
+  }
+
+  .header-btn:hover {
+    color: #fff;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    z-index: 1;
+  }
+
+  .video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .bg-video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
