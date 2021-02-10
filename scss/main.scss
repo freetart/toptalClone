@@ -83,4 +83,16 @@ body {
   }
 }
 
+// quotes
+.quotes {
+  background: url("../images/Wavey-Fingerprint.svg") center center/cover
+    no-repeat;
+
+  .glide__slide {
+    img {
+      width: 15rem;
+    }
+  }
+}
+
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
