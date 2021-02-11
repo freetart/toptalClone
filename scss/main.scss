@@ -99,4 +99,25 @@ body {
   }
 }
 
+// talent
+.talent-links {
+  img {
+    width: 5rem;
+    display: block;
+    margin: auto;
+  }
+
+  .talent-link {
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .talent-link.show {
+    opacity: 1;
+  }
+}
+
 @import "../node_modules/bootstrap/scss/bootstrap.scss";

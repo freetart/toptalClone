@@ -1,5 +1,5 @@
 "use strict";
-
+// nav
 const nav = document.querySelector(".custom-nav");
 
 function fixNav() {
