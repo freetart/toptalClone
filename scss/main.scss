@@ -100,6 +100,11 @@ body {
 }
 
 // talent
+
+.talent {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), $info);
+}
+
 .talent-links {
   img {
     width: 5rem;
@@ -124,6 +129,9 @@ body {
   }
 }
 
-// carousel
+// ebook
+.e-book {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), $info);
+}
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
