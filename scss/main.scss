@@ -132,6 +132,15 @@ body {
 // ebook
 .e-book {
   background: linear-gradient(rgba(0, 0, 0, 0.4), $info);
+
+  img {
+    box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.5);
+  }
+}
+
+// footer
+.footer-content {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
