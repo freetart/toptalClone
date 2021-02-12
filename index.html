@@ -19,6 +19,72 @@
     <title>Toptal Clone</title>
   </head>
   <body>
+    <!-- modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <i class="fas fa-mountain text-primary"></i>
+            <h5 class="modal-title" id="staticBackdropLabel">
+              The World's Top Talent, On Demand
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name" />
+              </div>
+              <div class="mb-3">
+                <label for="company" class="form-label">Company Name</label>
+                <input type="text" class="form-control" id="company" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Work Email</label>
+                <input type="email" class="form-control" id="email" />
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="number" class="form-control" id="phone" />
+              </div>
+              <div class="mb-3 form-check">
+                <small>
+                  By submitting this form, you are agreeing to Toptal’s Terms of
+                  Service, Privacy Policy, and Cookie Policy and that Toptal may
+                  monitor or record audio or video calls for quality assurance
+                  and training purposes.
+                </small>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- nav -->
     <nav
       class="navbar navbar-expand-lg navbar-dark fixed-top custom-nav"
@@ -55,7 +121,12 @@
               <a href="#talent" class="nav-link text-white">Toptal Talent</a>
             </li>
             <li class="nav-item">
-              <a href="#!" class="btn btn-lg-sm btn-outline-light">
+              <a
+                href="#!"
+                class="btn btn-lg-sm btn-outline-light"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+              >
                 Schedule a Call
               </a>
             </li>
