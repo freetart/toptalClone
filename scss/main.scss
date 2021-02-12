@@ -17,6 +17,7 @@ img {
 
 body {
   font-family: "Poppins", sans-serif !important;
+  overflow-x: hidden;
 }
 
 // nav
@@ -133,8 +134,19 @@ body {
 .e-book {
   background: linear-gradient(rgba(0, 0, 0, 0.4), $info);
 
+  a:hover {
+    color: #fff;
+  }
+
   img {
     box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.5);
+  }
+}
+
+// cta
+.cta {
+  a:hover {
+    color: #fff;
   }
 }
 
