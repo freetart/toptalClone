@@ -1,5 +1,5 @@
 "use strict";
-// nav
+// add background to nav on scroll
 const nav = document.querySelector(".custom-nav");
 
 function fixNav() {
@@ -11,3 +11,13 @@ function fixNav() {
 }
 
 window.addEventListener("scroll", fixNav);
+
+// collapse navbar on link click
+const navLink = document.querySelectorAll(".nav-link");
+const navbarCollapse = document.querySelector(".navbar-collapse");
+
+navLink.forEach((link) => {
+  link.addEventListener("click", () => {
+    navbarCollapse.classList.remove("show");
+  });
+});
